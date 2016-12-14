@@ -12,19 +12,16 @@ IKAnalyzer3.0特性:
 
 IKAnalyzer的作者为林良益（linliangyi2007@gmail.com），项目网站为http://code.google.com/p/ik-analyzer/。
 
-Maven工程由王坤山创建（wks1986@gmail.com）。创建的目的是为了方便用于其他Maven工程。你可以在 https://github.com/wks/ik-analyzer 网站找到本工程。
+IKAnalyzer3.0 支持lucene 3.x，但不能兼容lucene5.x，在IKAnalyzer3.0源码修改使其兼容lucene5.x。
 
-Maven用法：
+在使用IK Analyzer之前，IK Analyzer装安装到本地的repository，或者上传到自己的Maven repository服务器上。
 
-将以下依赖加入工程的pom.xml中的<dependencies>...</dependencies>部分。
-    <dependency>
-        <groupId>org.wltea.ik-analyzer</groupId>
-        <artifactId>ik-analyzer</artifactId>
-        <version>3.2.8</version>
-	</dependency>
+将依赖加入工程的pom.xml中的<dependencies>...</dependencies>部分。
 
-在IK Analyzer加入Maven Central Repository之前，你需要手动安装，安装到本地的repository，或者上传到自己的Maven repository服务器上。
+<dependency>
+    <groupId>org.wltea.ik-analyzer</groupId>
+    <artifactId>ik-analyzer</artifactId>
+    <version>5.3.1</version>
+</dependency>
 
-要安装到本地Maven repository，使用如下命令，将自动编译，打包并安装：
-mvn install -Dmaven.test.skip=true
 
